@@ -137,8 +137,9 @@ class CircularProgressbar extends React.Component {
             <text
               className={classes.text}
               style={styles.text}
-              x={CENTER_X}
+              x={40}
               y={CENTER_Y}
+              dy="0.35em"
             >
               {text}
             </text>

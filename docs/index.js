@@ -4780,8 +4780,9 @@ var CircularProgressbar = function (_React$Component) {
           {
             className: classes.text,
             style: styles.text,
-            x: CENTER_X,
-            y: CENTER_Y
+            x: 40,
+            y: CENTER_Y,
+            dy: '0.35em'
           },
           text
         ) : null
