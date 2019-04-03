@@ -95,6 +95,8 @@ class CircularProgressbar extends React.Component {
       styles,
       strokeWidth,
       text,
+      textXVal,
+      textYVal,
     } = this.props;
     const pathDescription = this.getPathDescription();
 
@@ -137,8 +139,8 @@ class CircularProgressbar extends React.Component {
             <text
               className={classes.text}
               style={styles.text}
-              x={40}
-              y={CENTER_Y}
+              x={textXVal || 40}
+              y={textYVal || CENTER_Y}
               dy="0.35em"
             >
               {text}

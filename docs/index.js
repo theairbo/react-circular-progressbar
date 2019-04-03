@@ -4743,7 +4743,9 @@ var CircularProgressbar = function (_React$Component) {
           classes = _props.classes,
           styles = _props.styles,
           strokeWidth = _props.strokeWidth,
-          text = _props.text;
+          text = _props.text,
+          textXVal = _props.textXVal,
+          textYVal = _props.textYVal;
 
       var pathDescription = this.getPathDescription();
 
@@ -4780,8 +4782,8 @@ var CircularProgressbar = function (_React$Component) {
           {
             className: classes.text,
             style: styles.text,
-            x: 40,
-            y: CENTER_Y,
+            x: textXVal || 40,
+            y: textYVal || CENTER_Y,
             dy: '0.35em'
           },
           text
